@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+  <title>jQuery Practice</title>
+</head>
+<body>
+
+<div id="first-div">
+  <h1>Test Your Typing Speed</h1>
+</div>
+
+<div id="second-div">
+  <p>This is a typing test. Your goal is to duplicate the provided text, EXACTLY, in the field below. The timer starts when you start typing, and only stops when you match this text exactly. <br>Good Luck!</p>
+</div>
+
+<div id="wrapper">
+  <div name="checkTest" id="test-text" spellcheck="false"></div>
+  <textarea name="inputText" id="input-text" spellcheck="false" placeholder="The clock will start when you start typing." onblur="placeholder='The clock will start when you start typing.'" onfocus="this.placeholder=''"></textarea>
+  <h1 id="timer">00:00:00</h1>
+  <button id="reset-button">Reset</button>
+</div>
+
+<div id="wrapper2">
+  <p id="mistakes">Mistakes: <span></span></p>
+  <p id="speed">Speed (chars/min): <span></span></p>
+</div>
+
+<div id="chart-container">
+    <canvas id="myChart"></canvas>
+</div>
+
+
+
+
+</body>
+</html>
